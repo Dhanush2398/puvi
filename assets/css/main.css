@@ -13851,7 +13851,7 @@ START: Theme Slider CSS
   margin: 0 auto;
   position: absolute;
   inset-inline-start: 50%;
-  bottom: 60px;
+  bottom: 10px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
