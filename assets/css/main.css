@@ -2526,11 +2526,7 @@ START: Theme Footer CSS
   position: relative;
   padding: 0px 0 0px 0;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .footer-main-area {
-    padding: 70px 0;
-  }
-}
+
 
 .footer-logo {
   max-width: 150px;
@@ -3102,11 +3098,6 @@ START: Theme Footer CSS
   filter: blur(50px);
   opacity: 0.15;
   z-index: -1;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .tj-footer-section.footer-2 {
-    padding-top: 60px;
-  }
 }
 
 .footer-subscribe {
@@ -11833,7 +11824,8 @@ START: Faq CSS
 }
 .faq-img-area .faq-img .title {
   position: absolute;
-  top: 40px;
+  top: 1px;
+  font-size: 20px;
   inset-inline-start: 30px;
   max-width: 400px;
   color: var(--tj-color-common-white);
@@ -28763,3 +28755,16 @@ START: Blog CSS
   display: block;
   border-radius: 10px;
 }
+
+.faq-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.faq-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
