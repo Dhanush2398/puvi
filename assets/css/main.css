@@ -10347,8 +10347,8 @@ START: Theme Marquee CSS
           padding-inline-end: 30px;
 }
 .marquee-item .marquee-text {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px var(--tj-color-common-white);
+  -webkit-text-fill-color: #EADBC8;
+  -webkit-text-stroke: 2px #515050;
   font-size: 86px;
   font-weight: var(--tj-fw-sbold);
   font-family: var(--tj-ff-heading);
@@ -13849,8 +13849,8 @@ START: Theme Slider CSS
   margin: 0;
 }
 .hero-thumb .thumb-item {
-  width: 80px !important;
-  height: 80px;
+  width: 120px !important;
+  height: 60px;
   border-radius: 6px;
   overflow: hidden;
   position: relative;
@@ -13875,8 +13875,8 @@ START: Theme Slider CSS
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .hero-thumb .thumb-item {
-    width: 65px !important;
-    height: 65px;
+    width: 75px !important;
+    height: 45px;
   }
 }
 .hero-thumb .swiper-slide-thumb-active {
@@ -14858,13 +14858,31 @@ START: Breadcrumb CSS
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--tj-color-theme-dark);
+
   background-blend-mode: luminosity;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
   z-index: 2;
   margin-top: 20px;
+}
+
+/* Overlay */
+.tj-page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity here */
+  z-index: 1;
+}
+
+/* Make sure content stays above overlay */
+.tj-page-header > * {
+  position: relative;
+  z-index: 2;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tj-page-header {
@@ -14920,12 +14938,12 @@ START: Breadcrumb CSS
   display: inline-flex;
   line-height: 1;
   font-size: 16px;
-  color: var(--tj-color-theme-primary);
+  color: #fff;
 }
 .tj-page-link span:not(:first-child) i {
   font-size: 18px;
   font-weight: var(--tj-fw-bold);
-  color: var(--tj-color-theme-dark-4);
+  color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
